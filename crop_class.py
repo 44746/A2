@@ -1,6 +1,5 @@
 import random
 
-                         
 class Crop:
     """"A generic food crop"""
 
