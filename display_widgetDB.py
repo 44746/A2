@@ -7,7 +7,7 @@ class DisplayWidget(QWidget):
         super().__init__()
 
        
-        self.label = QLabel("Hello")
+        self.label = QLabel("")
         self.button = QPushButton("Back")
 
         self.layout = QVBoxLayout()
@@ -22,5 +22,3 @@ class DisplayWidget(QWidget):
 
     def back_pushed(self):
         self.BackPushed.emit()
-
-

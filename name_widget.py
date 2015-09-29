@@ -5,7 +5,7 @@ class NameWidget(QWidget):
     NameEntered = pyqtSignal()
     def __init__(self):
         super().__init__()
-
+        
         self.username = QLineEdit()
         self.label = QLabel("Please enter your name: ")
         self.submit = QPushButton("Submit")
@@ -22,5 +22,4 @@ class NameWidget(QWidget):
 
     def submit_pushed(self):
         name = self.username.text()
-        print("Hello {0}!".format(name))
         self.NameEntered.emit()
